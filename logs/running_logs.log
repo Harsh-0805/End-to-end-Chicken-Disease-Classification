@@ -115,3 +115,274 @@ Source-Age: 0
 [2024-03-06 14:56:19,584: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x] 
+[2024-03-06 15:03:24,668: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:03:24,672: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:03:24,674: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:03:24,674: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir] 
+[2024-03-06 15:03:24,679: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir] 
+[2024-03-06 15:32:04,808: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:32:04,814: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:32:04,816: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:32:04,818: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir] 
+[2024-03-06 15:32:04,821: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir] 
+[2024-03-06 15:35:23,516: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:35:23,520: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:35:23,524: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:35:23,526: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir] 
+[2024-03-06 15:35:23,528: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir] 
+[2024-03-06 15:35:23,530: INFO: common: created directory at: artifacts\training] 
+[2024-03-06 15:49:20,570: INFO: main: >>>>>> stage Data Ingestion stage <<<<<<<<] 
+[2024-03-06 15:49:20,570: INFO: stage_01_data_ingestion: Starting Data Ingestion...] 
+[2024-03-06 15:49:20,575: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:49:20,583: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:49:20,588: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:49:20,589: INFO: common: created directory at: artifacts/data_ingestion] 
+[2024-03-06 15:49:24,853: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 43FA:1B283:1ED536:21F833:65E836B5
+Accept-Ranges: bytes
+Date: Wed, 06 Mar 2024 10:19:23 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4742-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709720363.857928,VS0,VE347
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 360d27dfd58117f043c98e893f902e35f7790aaf
+Expires: Wed, 06 Mar 2024 10:24:23 GMT
+Source-Age: 0
+
+] 
+[2024-03-06 15:49:27,025: INFO: main: stage Data Ingestion stage completed successfully] 
+[2024-03-06 15:49:27,027: INFO: main: *******************] 
+[2024-03-06 15:49:27,027: INFO: main: >>>>>> stage Prepare base model started <<<<<<] 
+[2024-03-06 15:49:27,046: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:49:27,060: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:49:27,062: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:49:27,063: INFO: common: created directory at: artifacts/prepare_base_model] 
+[2024-03-06 15:49:28,548: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-03-06 15:49:29,084: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-03-06 15:49:29,085: INFO: main: *******************] 
+[2024-03-06 15:49:29,086: INFO: main: >>>>>> stage Training started <<<<<<] 
+[2024-03-06 15:49:29,091: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:49:29,095: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:49:29,097: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:49:29,097: ERROR: main: name 'os' is not defined] 
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    obj.main()
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    prepare_callbacks_config = config.get_prepare_callback_config()
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\config\configuration.py", line 48, in get_prepare_callback_config
+    model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2024-03-06 15:51:09,477: INFO: main: >>>>>> stage Data Ingestion stage <<<<<<<<] 
+[2024-03-06 15:51:09,477: INFO: stage_01_data_ingestion: Starting Data Ingestion...] 
+[2024-03-06 15:51:09,479: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:51:09,479: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:51:09,484: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:51:09,485: INFO: common: created directory at: artifacts/data_ingestion] 
+[2024-03-06 15:51:09,485: ERROR: main: stage Data Ingestion stage failed! Error: Argument path of type <class 'str'> to <function get_size at 0x0000018FD9FACDC0> does not match annotation type <class 'pathlib.Path'>] 
+[2024-03-06 15:53:29,415: INFO: main: >>>>>> stage Data Ingestion stage <<<<<<<<] 
+[2024-03-06 15:53:29,416: INFO: stage_01_data_ingestion: Starting Data Ingestion...] 
+[2024-03-06 15:53:29,419: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:53:29,421: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:53:29,422: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:53:29,422: INFO: common: created directory at: artifacts/data_ingestion] 
+[2024-03-06 15:53:29,422: ERROR: main: stage Data Ingestion stage failed! Error: Argument path of type <class 'str'> to <function get_size at 0x0000024FC952CDC0> does not match annotation type <class 'pathlib.Path'>] 
+[2024-03-06 15:53:45,188: INFO: main: >>>>>> stage Data Ingestion stage <<<<<<<<] 
+[2024-03-06 15:53:45,188: INFO: stage_01_data_ingestion: Starting Data Ingestion...] 
+[2024-03-06 15:53:45,197: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:53:45,203: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:53:45,208: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:53:45,212: INFO: common: created directory at: artifacts/data_ingestion] 
+[2024-03-06 15:53:48,008: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 43FA:1B283:1ED536:21F833:65E836B5
+Accept-Ranges: bytes
+Date: Wed, 06 Mar 2024 10:23:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4722-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709720627.014401,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 478dbfed1bf695fea9d36d7afbebee763ab4d7ad
+Expires: Wed, 06 Mar 2024 10:28:47 GMT
+Source-Age: 264
+
+] 
+[2024-03-06 15:53:48,725: INFO: main: stage Data Ingestion stage completed successfully] 
+[2024-03-06 15:53:48,725: INFO: main: *******************] 
+[2024-03-06 15:53:48,727: INFO: main: >>>>>> stage Prepare base model started <<<<<<] 
+[2024-03-06 15:53:48,735: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:53:48,745: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:53:48,748: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:53:48,756: INFO: common: created directory at: artifacts/prepare_base_model] 
+[2024-03-06 15:53:50,073: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-03-06 15:53:51,512: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-03-06 15:53:51,513: INFO: main: *******************] 
+[2024-03-06 15:53:51,514: INFO: main: >>>>>> stage Training started <<<<<<] 
+[2024-03-06 15:53:51,529: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:53:51,558: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:53:51,560: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:53:51,562: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir] 
+[2024-03-06 15:53:51,564: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir] 
+[2024-03-06 15:53:51,574: ERROR: main: 'WindowsPath' object has no attribute 'endswith'] 
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    obj.main()
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+  File "D:\anaconda\envs\chicken\lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2024-03-06 15:55:01,497: INFO: main: >>>>>> stage Data Ingestion stage <<<<<<<<] 
+[2024-03-06 15:55:01,499: INFO: stage_01_data_ingestion: Starting Data Ingestion...] 
+[2024-03-06 15:55:01,501: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:55:01,505: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:55:01,505: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:55:01,507: INFO: common: created directory at: artifacts/data_ingestion] 
+[2024-03-06 15:55:03,740: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 43FA:1B283:1ED536:21F833:65E836B5
+Accept-Ranges: bytes
+Date: Wed, 06 Mar 2024 10:25:02 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4721-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709720702.436306,VS0,VE325
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c2a9755b5bad81cf312b5341f07d29aae0abad28
+Expires: Wed, 06 Mar 2024 10:30:02 GMT
+Source-Age: 0
+
+] 
+[2024-03-06 15:55:04,348: INFO: main: stage Data Ingestion stage completed successfully] 
+[2024-03-06 15:55:04,348: INFO: main: *******************] 
+[2024-03-06 15:55:04,356: INFO: main: >>>>>> stage Prepare base model started <<<<<<] 
+[2024-03-06 15:55:04,367: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:55:04,374: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:55:04,382: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:55:04,385: INFO: common: created directory at: artifacts/prepare_base_model] 
+[2024-03-06 15:55:05,154: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-03-06 15:55:05,697: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-03-06 15:55:05,697: INFO: main: *******************] 
+[2024-03-06 15:55:05,697: INFO: main: >>>>>> stage Training started <<<<<<] 
+[2024-03-06 15:55:05,702: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:55:05,709: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:55:05,711: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:55:05,713: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir] 
+[2024-03-06 15:55:05,715: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir] 
+[2024-03-06 15:55:05,717: ERROR: main: 'WindowsPath' object has no attribute 'endswith'] 
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    model_trainer.main()
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "d:\ds projects\end to end chicken disease classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+  File "D:\anaconda\envs\chicken\lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2024-03-06 15:57:44,586: INFO: main: >>>>>> stage Data Ingestion stage <<<<<<<<] 
+[2024-03-06 15:57:44,586: INFO: stage_01_data_ingestion: Starting Data Ingestion...] 
+[2024-03-06 15:57:44,590: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:57:44,590: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:57:44,590: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:57:44,594: INFO: common: created directory at: artifacts/data_ingestion] 
+[2024-03-06 15:57:46,643: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 43FA:1B283:1ED536:21F833:65E836B5
+Accept-Ranges: bytes
+Date: Wed, 06 Mar 2024 10:27:45 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4731-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709720866.657824,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4712bf6e29c9cac7d21afd44613bf68fd0688da2
+Expires: Wed, 06 Mar 2024 10:32:45 GMT
+Source-Age: 163
+
+] 
+[2024-03-06 15:57:47,141: INFO: main: stage Data Ingestion stage completed successfully] 
+[2024-03-06 15:57:47,142: INFO: main: *******************] 
+[2024-03-06 15:57:47,142: INFO: main: >>>>>> stage Prepare base model started <<<<<<] 
+[2024-03-06 15:57:47,143: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:57:47,149: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:57:47,150: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:57:47,151: INFO: common: created directory at: artifacts/prepare_base_model] 
+[2024-03-06 15:57:47,772: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.] 
+[2024-03-06 15:57:48,100: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
+[2024-03-06 15:57:48,100: INFO: main: *******************] 
+[2024-03-06 15:57:48,101: INFO: main: >>>>>> stage Training started <<<<<<] 
+[2024-03-06 15:57:48,104: INFO: common: yaml file: config\config.yaml loaded successfully] 
+[2024-03-06 15:57:48,107: INFO: common: yaml file: params.yaml loaded successfully] 
+[2024-03-06 15:57:48,108: INFO: common: created directory at: artifacts] 
+[2024-03-06 15:57:48,110: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir] 
+[2024-03-06 15:57:48,111: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir] 
+[2024-03-06 15:57:48,114: INFO: common: created directory at: artifacts\training] 
+[2024-03-06 16:03:14,610: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x] 
